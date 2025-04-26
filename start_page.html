@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Mood Tune AI</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://code-care.com/wp-content/uploads/2021/04/How-to-create-your-own-music-streaming-app.jpg') no-repeat center center/cover;
+            height: 100vh;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-shadow: 2px 2px 8px #000;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+
+        .hero button {
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 30px;
+            background: #ff4081;
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        .hero button:hover {
+            background: #e91e63;
+        }
+
+        section {
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .description,
+        .how-it-works,
+        .collaboration {
+            background: #f9f9f9;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        p {
+            max-width: 800px;
+            margin: 0 auto 20px;
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        /* Roadmap Style */
+        .roadmap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .roadmap-step {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 600px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .roadmap-step:hover {
+            transform: scale(1.02);
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+            font-size: 0.9rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: #ff4081;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Welcome to Mood Tune AI</h1>
+        <button onclick="redirectToLogin()">Register</button>
+    </div>
+
+    <!-- Description Section -->
+    <section class="description">
+        <h2>About Mood Tune AI</h2>
+        <p>
+            Mood Tune AI is a smart music companion that understands your emotions and curates the perfect playlist for
+            you. Whether you're feeling happy, relaxed, or a little blue, we bring you the beats that match your vibe —
+            instantly and seamlessly!
+        </p>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <h2>How It Works</h2>
+
+        <div class="roadmap">
+            <div class="roadmap-step">
+                <h3>Step 1: Detect Your Mood</h3>
+                <p>Using AI, Mood Tune analyzes your mood from your inputs like text, voice, or image.</p>
+            </div>
+            <div class="roadmap-step">
+                <h3>Step 2: Choose Your Language</h3>
+                <p>We personalize your playlist based on your preferred language: English, Hindi, Spanish, and more!</p>
+            </div>
+            <div class="roadmap-step">
+                <h3>Step 3: Recommend Best Songs</h3>
+                <p>Enjoy a curated playlist tailored to how you feel, refreshed every time you engage.</p>
+            </div>
+            <div class="roadmap-step">
+                <h3>Step 4: Continuous Learning</h3>
+                <p>Our AI improves with every interaction to make your listening experience even more magical.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collaboration Section -->
+    <section class="collaboration">
+        <h2>Collaborate With Us</h2>
+        <p>
+            Are you an artist, developer, or AI enthusiast? Join hands with Mood Tune AI to revolutionize the way people
+            experience music emotionally. Let's innovate together!
+        </p>
+        <p>📧 <a href="mailto:collaborate@moodtuneai.com">collaborate@moodtuneai.com</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 Mood Tune AI. All Rights Reserved.
+    </footer>
+
+    <script>
+        function redirectToLogin() {
+            window.location.href = 'Login.html';
+        }
+    </script>
+
+</body>
+
+</html>

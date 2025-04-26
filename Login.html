@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login & Signup</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="header-section">
+    <h1 class="project-title">🎵 MoodTune AI</h1>
+
+    <div class="tagline-animation">
+      <p class="project-tagline">Feel the music that matches your mood</p>
+      <div class="music-animation">
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="tabs">
+      <button id="login-tab" class="active">Login</button>
+      <button id="signup-tab">Signup</button>
+    </div>
+
+    <form id="login-form" class="active">
+      <input type="email" id="login-email" placeholder="Email" required />
+      <input type="password" id="login-password" placeholder="Password" required />
+      <button type="submit" class="submit">Login</button>
+      <div class="message">Don't have an account? <a href="#" onclick="switchTab('signup')">Signup</a></div>
+    </form>
+
+    <form id="signup-form">
+      <input type="text" id="signup-name" placeholder="Full Name" required />
+      <input type="email" id="signup-email" placeholder="Email" required />
+      <input type="password" id="signup-password" placeholder="Password" required />
+      <button type="submit" class="submit">Signup</button>
+      <div class="message">Already have an account? <a href="#" onclick="switchTab('login')">Login</a></div>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
