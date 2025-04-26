@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    padding: 40px 30px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+    color: white;
+}
+
+h1 {
+    font-size: 26px;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+input,
+select,
+button {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.mood-input {
+    width: 80%;
+    margin: 0 auto 10px;
+    display: block;
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+}
+
+select {
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+}
+
+button {
+    background: #ff4081;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #e91e63;
+}
+
+audio {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.controls {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 15px;
+gap: 10px;
+}
+
+.controls button {
+background: white;
+color: #ff4081;
+padding: 8px;
+border-radius: 50%;
+width: 40px;
+height: 40px;
+font-size: 18px;
+display: flex;
+align-items: center;
+justify-content: center;
+border: none;
+cursor: pointer;
+transition: background 0.3s ease;
+}
+
+.controls button:hover {
+background: #ffb6c1;
+}
+
+#output {
+    margin-top: 20px;
+    font-size: 1rem;
+}
